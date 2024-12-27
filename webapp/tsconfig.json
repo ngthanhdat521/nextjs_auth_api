@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@interfaces/*": ["./src/interfaces/*"],
+      "@interfaces": ["./src/interfaces/index.ts"],
+      "@services/*": ["./src/services/*"],
+      "@services": ["./src/services/index.ts"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@hooks": ["./src/hooks/index.ts"],
+      "@utils/*": ["./src/utils/*"],
+      "@utils": ["./src/utils/index.ts"],
+      "@stores/*": ["./src/stores/*"],
+      "@stores": ["./src/stores/index.ts"],
+      "@providers/*": ["./src/providers/*"],
+      "@providers": ["./src/providers/index.ts"],
+      "@i18n/*": ["./src/i18n/*"],
+      "@common-types/*": ["./src/common-types/*"],
+      "@common-types": ["./src/common-types/index.ts"],
+      "@dtos/*": ["./src/dtos/*"],
+      "@dtos": ["./src/dtos/index.ts"],
+      "@constants/*": ["./src/constants/*"],
+      "@constants": ["./src/constants/index.ts"],
+    }
+  },
+  "include": [
+    "*.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/components/templates/MasterPage.tsx",
+    "src/app/api/auth/[auth0]/route.ts",
+    "src/**/*.d.ts",
+  ],
+  "exclude": ["node_modules"]
+}
