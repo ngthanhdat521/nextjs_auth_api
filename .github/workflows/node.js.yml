@@ -12,6 +12,7 @@ jobs:
       - name: SSH & run yarn start
         uses: appleboy/ssh-action@v1.0.3
         with:
+          passphrase: ${{ secrets.SSH_PASSPHRASE }}
           host: ${{ secrets.VPS_HOST }}
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
