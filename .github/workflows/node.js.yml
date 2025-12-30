@@ -22,4 +22,4 @@ jobs:
             [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
             nvm use --lts
             cd /home/demo
-            npx serve . 
+            nohup npx serve . > serve.log 2>&1 &
