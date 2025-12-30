@@ -18,4 +18,4 @@ jobs:
           port: ${{ secrets.VPS_PORT }}
           script: |
             cd /home/demo
-            yarn start
+            npx serve .
